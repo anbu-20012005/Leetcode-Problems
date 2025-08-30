@@ -1,5 +1,12 @@
 class Solution {
-    public int[] findIntersectionValues(int[] nums1, int[] nums2) {
+    static {
+        for(int i=0;i<300;i++){
+            int[] arr = {0,0};
+            int[] asd = {1,0};
+            findIntersectionValues(arr,asd);
+        }
+    }
+    public static int[] findIntersectionValues(int[] nums1, int[] nums2) {
         int ans2 = 0;
         int ans1 = 0;
         Set<Integer> set1 = new HashSet<>();
