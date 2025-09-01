@@ -1,17 +1,16 @@
 class Solution {
     public boolean isLongPressedName(String name, String typed) {
-        int i = 0;
-        int j = 0;
-        while(i<name.length() && j<typed.length()){
-            if(name.charAt(i)==typed.charAt(j)){
+        int i = 0, j = 0;
+        while (j < typed.length()) {
+            if (i < name.length() && name.charAt(i) == typed.charAt(j)) {
                 i++;
                 j++;
-            }
-            else{
-                j++;
+            } else if (j > 0 && typed.charAt(j) == typed.charAt(j - 1)) {
+                j++; // valid long press
+            } else {
+                return false; // invalid char
             }
         }
-        if(i==name.length()) return true;
-        return false;
+        return i == name.length();
     }
 }
