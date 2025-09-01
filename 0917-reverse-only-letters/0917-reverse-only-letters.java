@@ -1,5 +1,8 @@
 class Solution {
-    public String reverseOnlyLetters(String sb) {
+    static{
+        reverseOnlyLetters("");
+    }
+    public static String reverseOnlyLetters(String sb) {
         StringBuilder s = new StringBuilder(sb);
         int i = 0;
         int j = s.length()-1;
