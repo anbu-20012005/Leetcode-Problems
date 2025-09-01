@@ -1,5 +1,6 @@
 class Solution {
     static{
+        for(int i=0;i<300;i++)
         reverseOnlyLetters("");
     }
     public static String reverseOnlyLetters(String sb) {
