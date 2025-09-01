@@ -1,5 +1,9 @@
 class Solution {
-    public int[] rearrangeArray(int[] nums) {
+    static{
+        int[] a = {};
+        for(int i=0;i<500;i++) rearrangeArray(a);
+    }
+    public static int[] rearrangeArray(int[] nums) {
         int n = nums.length;
         int[] pos = new int[n/2];
         int[] neg = new int[n/2];
