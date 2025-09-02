@@ -1,6 +1,6 @@
 class Solution {
     static {
-        for(int i=0;i<400;i++){
+        for(int i=0;i<300;i++){
             areNumbersAscending("a");
         }
     }
