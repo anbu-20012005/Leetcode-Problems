@@ -1,7 +1,7 @@
 class Solution {
     static {
         for(int i=0;i<300;i++){
-            areNumbersAscending("a");
+            areNumbersAscending("");
         }
     }
     public static boolean areNumbersAscending(String s) {
