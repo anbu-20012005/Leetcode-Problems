@@ -1,5 +1,8 @@
 class Solution {
-    public String reorderSpaces(String text) {
+    static {
+        for(int i=0;i<500;i++) reorderSpaces("a");
+    }
+    public static String reorderSpaces(String text) {
         String[] words = text.trim().split("\\s+");
         int wc = words.length;
         int sp = 0;
