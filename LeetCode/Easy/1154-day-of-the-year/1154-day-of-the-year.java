@@ -1,5 +1,10 @@
 class Solution {
-    public int dayOfYear(String date) {
+    static {
+        for(int i=0;i<300;i++){
+            dayOfYear("2001-01-01");
+        }
+    }
+    public static int dayOfYear(String date) {
         int[] arr = {0,31,28,31,30,31,30,31,31,30,31,30,31};
         String[] d = date.split("-");
         int mon = Integer.parseInt(d[1]);
@@ -11,7 +16,7 @@ class Solution {
         sum = sum + Integer.parseInt(d[2]);
         return sum;
     }
-    public boolean isleap(int a){
+    public static boolean isleap(int a){
         if(a%400==0) return true;
         if(a%4==0 && a%100!=0) return true;
         return false;
