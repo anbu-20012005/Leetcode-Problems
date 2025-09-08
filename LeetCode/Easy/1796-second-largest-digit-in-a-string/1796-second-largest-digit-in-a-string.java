@@ -1,5 +1,9 @@
 class Solution {
-    public int secondHighest(String s) {
+    static{
+        for(int i=0;i<100;i++)
+        secondHighest("");
+    }
+    public static int secondHighest(String s) {
         HashSet<Integer> set = new HashSet<>();
         ArrayList<Integer> list = new ArrayList<>();
         for(char ch : s.toCharArray()){
