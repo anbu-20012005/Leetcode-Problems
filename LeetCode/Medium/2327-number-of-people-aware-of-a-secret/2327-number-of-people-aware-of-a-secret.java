@@ -1,8 +1,10 @@
 class Solution {
 
     private static final int MOD = 1000000007;
-
-    public int peopleAwareOfSecret(int n, int delay, int forget) {
+    static{
+        peopleAwareOfSecret(4,5,2);
+    }
+    public static int peopleAwareOfSecret(int n, int delay, int forget) {
         Deque<int[]> know = new LinkedList<>();
         Deque<int[]> share = new LinkedList<>();
         know.add(new int[] { 1, 1 });
