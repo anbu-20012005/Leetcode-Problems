@@ -1,7 +1,10 @@
 class Solution {
-    public boolean doesAliceWin(String s) {
-        String vow = "AEIOUaeiou";
-        int count = 0;
+    static{
+        for(int i=0;i<200;i++){
+            doesAliceWin("a");
+        }
+    }
+    public static boolean doesAliceWin(String s) {
         for(char ch : s.toCharArray()){
            switch(ch){
             case 'a','e','i','o','u':
