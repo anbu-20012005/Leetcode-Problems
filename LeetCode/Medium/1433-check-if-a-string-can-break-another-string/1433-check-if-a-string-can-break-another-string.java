@@ -18,6 +18,6 @@ class Solution {
                 break;
             }
         }
-        return (!flag1==flag2);
+        return flag1 || flag2;
     }
 }
